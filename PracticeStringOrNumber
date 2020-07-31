@@ -1,0 +1,21 @@
+# Print my_list
+my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(my_list)
+
+# user inputs string
+my_inp = input('Enter an integer between 1 and 10 >')
+
+# condition checking if string is a number or not
+# if string is a number, is it greater than 1 and less than 10, if not, print else
+# if it is not a number, print else
+if my_inp.isnumeric():
+    if int(my_inp) >= 1 and int(my_inp) <= 10:
+        my_int = int(my_inp)
+        my_list.index(my_int)
+        new_index = my_list.index(my_int)
+        my_list[new_index] = 'gone'
+        print(my_list)
+    else:
+        print(str(my_inp), 'is not between 1 and 10')
+else:
+    print(str(my_inp), 'is not a positive integer')           
